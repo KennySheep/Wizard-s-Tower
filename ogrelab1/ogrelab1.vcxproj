@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36E8C48A-0A64-4760-8417-849F80892210}</ProjectGuid>
+    <RootNamespace>ogrelab1</RootNamespace>
+    <ProjectName>bullet server</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\bin\release\</OutDir>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\include\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\include\OGRE\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\include\OIS\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\boost_1_42\</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\lib\release\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\boost_1_42\lib\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\lib\release\</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\include\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\include\OGRE\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\include\OIS\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\boost_1_42\;C:\Users\KennySheep\Documents\Humber\physics final\bullet-2.78\src;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\lib\release\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\boost_1_42\lib\;C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\lib\release\;C:\Users\KennySheep\Documents\Humber\physics final\bullet-2.78\msvc\2008\lib\Release;</LibraryPath>
+    <OutDir>C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);OgreMain.lib;OIS.lib;OgreTerrain.lib; </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Users\KennySheep\Documents\Humber\capstone\RakNet\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);OgreMain.lib;OIS.lib;OgreTerrain.lib; BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;ws2_32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\AutopatcherPatchContext.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\AutopatcherRepositoryInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\BitStream.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CCRakNetSlidingWindow.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CCRakNetUDT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CheckSum.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CloudClient.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CloudCommon.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CloudServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CommandParserInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ConnectionGraph2.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ConsoleServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DataCompressor.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DirectoryDeltaTransfer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_BinarySearchTree.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_BPlusTree.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_BytePool.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_ByteQueue.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Hash.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Heap.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_HuffmanEncodingTree.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_HuffmanEncodingTreeFactory.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_HuffmanEncodingTreeNode.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_LinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_List.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Map.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_MemoryPool.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Multilist.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_OrderedChannelHeap.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_OrderedList.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Queue.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_QueueLinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_RangeList.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Table.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_ThreadsafeAllocatingQueue.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Tree.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_WeightedGraph.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DynDNS.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\EmailSender.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\EpochTimeToString.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Export.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileList.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileListNodeContext.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileListTransfer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileListTransferCBInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileOperations.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FormatString.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FullyConnectedMesh2.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Getche.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Gets.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\GetTime.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\gettimeofday.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\GridSectorizer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\HTTPConnection.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\IncrementalReadInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\InternalPacket.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Itoa.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Kbhit.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\LinuxStrings.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\LocklessTypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\LogCommandParser.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\MessageFilter.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\MessageIdentifiers.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\MTUSize.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NativeFeatureIncludes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NativeFeatureIncludesOverrides.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NativeTypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatPunchthroughClient.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatPunchthroughServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatTypeDetectionClient.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatTypeDetectionCommon.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatTypeDetectionServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NetworkIDManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NetworkIDObject.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketConsoleLogger.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketFileLogger.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketizedTCP.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketLogger.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketOutputWindowLogger.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketPool.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketPriority.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PluginInterface2.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PS3Includes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Rackspace.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakAlloca.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakAssert.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakMemoryOverride.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetCommandParser.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetDefines.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetDefinesOverrides.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetSmartPtr.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetSocket.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetStatistics.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetTime.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetTransport2.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetTypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetVersion.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakPeer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakPeerInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakSleep.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakString.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakThread.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakWString.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Rand.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\rdlmalloc-options.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\rdlmalloc.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReadyEvent.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RefCountedObj.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReliabilityLayer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReplicaEnums.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReplicaManager3.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Router2.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RPC4Plugin.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SecureHandshake.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SendToThread.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SHA1.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SignaledEvent.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SimpleMutex.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SimpleTCPServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SingleProducerConsumer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SocketDefines.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SocketIncludes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SocketLayer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\StringCompressor.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\StringTable.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SuperFastHash.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TableSerializer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TCPInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TeamBalancer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TelnetTransport.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ThreadPool.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ThreadsafePacketLogger.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TransportInterface.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TwoWayAuthentication.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPForwarder.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyClient.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyCommon.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyCoordinator.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VariableDeltaSerializer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VariableListDeltaTracker.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VariadicSQLParser.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VitaIncludes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\WindowsIncludes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\WSAStartupSingleton.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\XBox360Includes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\_FindFirst.h" />
+    <ClInclude Include="..\BaseFrameListener.h" />
+    <ClInclude Include="..\BtOgreExtras.h" />
+    <ClInclude Include="..\BtOgreGP.h" />
+    <ClInclude Include="..\BtOgrePG.h" />
+    <ClInclude Include="..\CameraApp.h" />
+    <ClInclude Include="..\DotSceneLoader.h" />
+    <ClInclude Include="..\OgreApp.h" />
+    <ClInclude Include="..\rapidxml.h" />
+    <ClInclude Include="..\SendData.h" />
+    <ClInclude Include="..\TCPserver.h" />
+    <ClInclude Include="Ragdoll.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\BitStream.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CCRakNetSlidingWindow.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CCRakNetUDT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CheckSum.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CloudClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CloudCommon.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CloudServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CommandParserInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ConnectionGraph2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ConsoleServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DataCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DirectoryDeltaTransfer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_BytePool.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_ByteQueue.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DS_Table.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\DynDNS.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\EmailSender.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\EncodeClassName.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\EpochTimeToString.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileList.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileListTransfer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FileOperations.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FormatString.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\FullyConnectedMesh2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Getche.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Gets.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\GetTime.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\gettimeofday.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\GridSectorizer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\HTTPConnection.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\IncrementalReadInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Itoa.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\LinuxStrings.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\LocklessTypes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\LogCommandParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\MessageFilter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatPunchthroughClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatPunchthroughServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatTypeDetectionClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatTypeDetectionCommon.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NatTypeDetectionServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NetworkIDManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\NetworkIDObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketConsoleLogger.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketFileLogger.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketizedTCP.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketLogger.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PacketOutputWindowLogger.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\PluginInterface2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Rackspace.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakMemoryOverride.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetCommandParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetSocket.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetStatistics.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetTransport2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNetTypes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakPeer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakSleep.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakString.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakThread.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakWString.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Rand.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\rdlmalloc.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReadyEvent.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReliabilityLayer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ReplicaManager3.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\Router2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RPC4Plugin.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SecureHandshake.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SendToThread.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SHA1.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SignaledEvent.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SimpleMutex.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SocketLayer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\StringCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\StringTable.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\SuperFastHash.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TableSerializer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TCPInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TeamBalancer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TelnetTransport.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\ThreadsafePacketLogger.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\TwoWayAuthentication.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPForwarder.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyCoordinator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\UDPProxyServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VariableDeltaSerializer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VariableListDeltaTracker.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VariadicSQLParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\VitaIncludes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\WSAStartupSingleton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\_FindFirst.cpp" />
+    <ClCompile Include="..\BaseFrameListener.cpp" />
+    <ClCompile Include="..\BtOgre.cpp" />
+    <ClCompile Include="..\CameraApp.cpp" />
+    <ClCompile Include="..\DotSceneLoader.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\OgreApp.cpp" />
+    <ClCompile Include="..\TCPserver.cpp" />
+    <ClCompile Include="Ragdoll.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\CMakeLists.txt" />
+    <None Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNet.vcproj" />
+    <None Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNet_vc8.vcproj" />
+    <None Include="..\..\..\..\..\..\Humber\capstone\RakNet\Source\RakNet_vc9.vcproj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿Build started 11/16/2011 3:17:53 PM.
+     1>Project "C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\ogrelab7\ogrelab1\ogrelab1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\ogrelab1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         ogrelab1.vcxproj -> C:\Users\KennySheep\Documents\Humber\math second last semester\OgreSDK_vc10_v1-7-2\bin\release\ogrelab1.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\ogrelab1.unsuccessfulbuild".
+         Touching "Debug\ogrelab1.lastbuildstate".
+     1>Done Building Project "C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\ogrelab7\ogrelab1\ogrelab1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.23

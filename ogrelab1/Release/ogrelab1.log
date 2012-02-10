@@ -1,0 +1,146 @@
+﻿Build started 2/9/2012 8:57:05 PM.
+     1>Project "C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\ogrelab1\ogrelab1.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Touching "Release\bullet server.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\KennySheep\Documents\Humber\capstone\RakNet\Source /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\CameraApp.cpp
+         CameraApp.cpp
+     1>c:\users\kennysheep\documents\visual studio 2010\projects\_capstone prototype\_raknet testing\bullet server try 2\SendData.h(12): warning C4101: 'temp' : unreferenced local variable
+     1>c:\users\kennysheep\documents\visual studio 2010\projects\_capstone prototype\_raknet testing\bullet server try 2\SendData.h(23): warning C4101: 'temp' : unreferenced local variable
+     1>..\CameraApp.cpp(87): warning C4244: 'argument' : conversion from 'double' to 'Ogre::Real', possible loss of data
+     1>..\CameraApp.cpp(107): warning C4305: 'argument' : truncation from 'double' to 'const btScalar'
+     1>..\CameraApp.cpp(133): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(133): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(133): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(161): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(161): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(161): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(185): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(185): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(185): warning C4305: 'argument' : truncation from 'double' to 'Ogre::Real'
+     1>..\CameraApp.cpp(306): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\CameraApp.cpp(424): warning C4244: 'argument' : conversion from 'double' to 'const btScalar', possible loss of data
+     1>..\CameraApp.cpp(427): warning C4244: 'argument' : conversion from 'double' to 'const btScalar', possible loss of data
+     1>..\CameraApp.cpp(447): warning C4244: 'argument' : conversion from 'double' to 'const btScalar', possible loss of data
+     1>..\CameraApp.cpp(447): warning C4244: 'argument' : conversion from 'double' to 'const btScalar', possible loss of data
+     1>..\CameraApp.cpp(733): warning C4244: 'argument' : conversion from 'LONG' to 'Ogre::Real', possible loss of data
+     1>..\CameraApp.cpp(733): warning C4244: 'argument' : conversion from 'LONG' to 'Ogre::Real', possible loss of data
+     1>..\CameraApp.cpp(822): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\CameraApp.cpp(823): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OgreMain.lib OIS.lib OgreTerrain.lib BulletDynamics.lib BulletCollision.lib LinearMath.lib ws2_32.lib /MANIFEST /ManifestFile:"Release\bullet server.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.lib" /MACHINE:X86 Release\BitStream.obj
+         Release\CCRakNetSlidingWindow.obj
+         Release\CCRakNetUDT.obj
+         Release\CheckSum.obj
+         Release\CloudClient.obj
+         Release\CloudCommon.obj
+         Release\CloudServer.obj
+         Release\CommandParserInterface.obj
+         Release\ConnectionGraph2.obj
+         Release\ConsoleServer.obj
+         Release\DataCompressor.obj
+         Release\DirectoryDeltaTransfer.obj
+         Release\DS_BytePool.obj
+         Release\DS_ByteQueue.obj
+         Release\DS_HuffmanEncodingTree.obj
+         Release\DS_Table.obj
+         Release\DynDNS.obj
+         Release\EmailSender.obj
+         Release\EncodeClassName.obj
+         Release\EpochTimeToString.obj
+         Release\FileList.obj
+         Release\FileListTransfer.obj
+         Release\FileOperations.obj
+         Release\FormatString.obj
+         Release\FullyConnectedMesh2.obj
+         Release\Getche.obj
+         Release\Gets.obj
+         Release\GetTime.obj
+         Release\gettimeofday.obj
+         Release\GridSectorizer.obj
+         Release\HTTPConnection.obj
+         Release\IncrementalReadInterface.obj
+         Release\Itoa.obj
+         Release\LinuxStrings.obj
+         Release\LocklessTypes.obj
+         Release\LogCommandParser.obj
+         Release\MessageFilter.obj
+         Release\NatPunchthroughClient.obj
+         Release\NatPunchthroughServer.obj
+         Release\NatTypeDetectionClient.obj
+         Release\NatTypeDetectionCommon.obj
+         Release\NatTypeDetectionServer.obj
+         Release\NetworkIDManager.obj
+         Release\NetworkIDObject.obj
+         Release\PacketConsoleLogger.obj
+         Release\PacketFileLogger.obj
+         Release\PacketizedTCP.obj
+         Release\PacketLogger.obj
+         Release\PacketOutputWindowLogger.obj
+         Release\PluginInterface2.obj
+         Release\Rackspace.obj
+         Release\RakMemoryOverride.obj
+         Release\RakNetCommandParser.obj
+         Release\RakNetSocket.obj
+         Release\RakNetStatistics.obj
+         Release\RakNetTransport2.obj
+         Release\RakNetTypes.obj
+         Release\RakPeer.obj
+         Release\RakSleep.obj
+         Release\RakString.obj
+         Release\RakThread.obj
+         Release\RakWString.obj
+         Release\Rand.obj
+         Release\rdlmalloc.obj
+         Release\ReadyEvent.obj
+         Release\ReliabilityLayer.obj
+         Release\ReplicaManager3.obj
+         Release\Router2.obj
+         Release\RPC4Plugin.obj
+         Release\SecureHandshake.obj
+         Release\SendToThread.obj
+         Release\SHA1.obj
+         Release\SignaledEvent.obj
+         Release\SimpleMutex.obj
+         Release\SocketLayer.obj
+         Release\StringCompressor.obj
+         Release\StringTable.obj
+         Release\SuperFastHash.obj
+         Release\TableSerializer.obj
+         Release\TCPInterface.obj
+         Release\TeamBalancer.obj
+         Release\TelnetTransport.obj
+         Release\ThreadsafePacketLogger.obj
+         Release\TwoWayAuthentication.obj
+         Release\UDPForwarder.obj
+         Release\UDPProxyClient.obj
+         Release\UDPProxyCoordinator.obj
+         Release\UDPProxyServer.obj
+         Release\VariableDeltaSerializer.obj
+         Release\VariableListDeltaTracker.obj
+         Release\VariadicSQLParser.obj
+         Release\VitaIncludes.obj
+         Release\WSAStartupSingleton.obj
+         Release\_FindFirst.obj
+         Release\BaseFrameListener.obj
+         Release\BtOgre.obj
+         Release\CameraApp.obj
+         Release\DotSceneLoader.obj
+         Release\main.obj
+         Release\OgreApp.obj
+         Release\TCPserver.obj
+         Release\Ragdoll.obj
+         Generating code
+         Finished generating code
+         ogrelab1.vcxproj -> C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.exe;#1" /manifest "Release\bullet server.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\bullet server.unsuccessfulbuild".
+         Touching "Release\bullet server.lastbuildstate".
+     1>Done Building Project "C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\ogrelab1\ogrelab1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:48.67
