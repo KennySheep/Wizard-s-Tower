@@ -1,8 +1,8 @@
-﻿Build started 2/9/2012 8:57:05 PM.
+﻿Build started 2/10/2012 5:40:02 PM.
      1>Project "C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\ogrelab1\ogrelab1.vcxproj" on node 2 (build target(s)).
      1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>InitializeBuildStatus:
-         Touching "Release\bullet server.unsuccessfulbuild".
+         Creating "Release\bullet server.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\KennySheep\Documents\Humber\capstone\RakNet\Source /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\CameraApp.cpp
          CameraApp.cpp
@@ -26,8 +26,8 @@
      1>..\CameraApp.cpp(447): warning C4244: 'argument' : conversion from 'double' to 'const btScalar', possible loss of data
      1>..\CameraApp.cpp(733): warning C4244: 'argument' : conversion from 'LONG' to 'Ogre::Real', possible loss of data
      1>..\CameraApp.cpp(733): warning C4244: 'argument' : conversion from 'LONG' to 'Ogre::Real', possible loss of data
-     1>..\CameraApp.cpp(822): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
      1>..\CameraApp.cpp(823): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\CameraApp.cpp(824): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
        Link:
          c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OgreMain.lib OIS.lib OgreTerrain.lib BulletDynamics.lib BulletCollision.lib LinearMath.lib ws2_32.lib /MANIFEST /ManifestFile:"Release\bullet server.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\KennySheep\Documents\Visual Studio 2010\Projects\_Capstone prototype\_raknet testing\bullet server try 2\build here\bullet server.lib" /MACHINE:X86 Release\BitStream.obj
          Release\CCRakNetSlidingWindow.obj
@@ -143,4 +143,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:48.67
+Time Elapsed 00:01:11.98

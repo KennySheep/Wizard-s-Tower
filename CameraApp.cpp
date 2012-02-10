@@ -681,7 +681,7 @@ void CameraApp::createSceneManager()
 
 void CameraApp::shutdownApp()
 {
-
+	int x = 1337;
 }
 
 void CameraApp::moveHead(float x, float y, float z){
